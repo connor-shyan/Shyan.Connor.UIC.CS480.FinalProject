@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" 
+              fx:id = "pane2" styleClass="border" fx:controller = "MyController">
+              
+    <left>
+    	<VBox spacing = "10" alignment = "CENTER_LEFT">
+			<Button fx:id = "btn1" text = "pressed" disable = "true" onAction = "#btn1Method"/>
+			<Button fx:id = "btn2" text = "button2" onAction = "#btn2Method"/>
+			<padding>
+				<Insets top = "25" right = "25" bottom = "25" left = "25"/>
+			</padding>
+		</VBox>
+	</left>
+	
+	<center>
+		<VBox alignment = "CENTER">
+			<TextField fx:id = "txt1" maxWidth = "500" promptText = "enter text here then press button 1"/>
+		</VBox>
+	</center>
+	
+	<right>
+		<VBox alignment = "CENTER_RIGHT">
+			<TextField fx:id = "txt2" maxWidth = "250" text= "final string goes here" editable = "false"/>
+			<padding>
+				<Insets top = "25" right = "25" bottom = "25" left = "25"/>
+			</padding>
+		</VBox>
+	</right>
+    
+</BorderPane>
